@@ -1,0 +1,21 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore the .env file
+.env
+
+# Ignore local development files
+__pycache__/
+*.log
+*.db
+*.sqlite3
+
+# Ignore Docker files
+docker-compose.yml
+Dockerfile
+.env
+.idea/
