@@ -5,9 +5,6 @@ from flask import Flask, request
 import openai
 
 app = Flask(__name__)
-#openai.api_key = "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"
-#gitlab_token = "2ZbZzgZPz9o_F7kfXusx"
-#gitlab_url = "https://git.facha.dev/api/v4"
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 gitlab_token = os.environ.get("GITLAB_TOKEN")
 gitlab_url = os.environ.get("GITLAB_URL")
