@@ -15,7 +15,5 @@ __pycache__/
 *.sqlite3
 
 # Ignore Docker files
-docker-compose.yml
-Dockerfile
 .env
 .idea/
