@@ -15,7 +15,7 @@ def webhook():
     payload = request.json
     if payload.get("object_kind") == "merge_request":
         if payload["object_attributes"]["action"] != "open":
-            return "Not a  PR open", 400
+            return "Not a  PR open", 200
         project_id = payload["project"]["id"]
         mr_id = payload["object_attributes"]["iid"]
         changes_url = f"{gitlab_url}/projects/{project_id}/merge_requests/{mr_id}/changes"
